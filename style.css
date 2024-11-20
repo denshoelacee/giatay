@@ -1,0 +1,524 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif
+}
+
+.header-container{
+    background-color: white;
+    width: 100%;
+    height: 130px;
+    display: flex;
+
+}
+
+.header-img img{
+    width: 150px;
+    margin-left: 70px;
+}
+
+.main-navbar{
+    margin: 30px 0;
+}
+
+.main-navbar a{
+    font-size: 20px;
+    margin: 0 10px;
+    text-decoration: none;
+    color:black;
+    padding: 20px;
+}
+
+.main-navbar a:hover{
+    background-color: black;
+    border-radius: 5px;
+    color: white;
+}
+
+.article-container {
+    background-color: #666;
+    color: #fff;
+    padding: 100px 170px;
+    max-height: 800px;
+    width: 100%;
+    height: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    
+}
+
+.category {
+    font-size: 2rem;
+    color: #E3DB00;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.headline {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+    width: 60%;
+    margin: 0 0 20px;
+    margin-bottom: 50px;
+}
+
+.date {
+    font-size: 1.2rem;
+    color: #ddd;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.date span {
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    background-color: #5E0D0D; 
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #7F1A1A; 
+}
+
+.button i {
+    font-size: 18px;
+}
+
+.sub-container{
+    display: flex;
+
+}
+
+.image-container {
+    position: relative;
+    background-color: white;
+    margin-top: -60px;
+    margin-left: 160px;
+    width: 50.555%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image-container img {
+    margin: 45px;
+    width: 88%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.content{
+    margin:0 40px;
+    margin-bottom: 50px;
+
+}
+
+.content p{
+    font-size: 19px;
+    color:rgb(156, 167, 167);
+    line-height: 34px;
+}
+
+.right-container {
+    width: 25%;    
+    margin: 0;
+    background-color: white;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+.search-bar {
+    display: flex;
+    margin-bottom: 60px;
+    height: 50px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+}
+
+.search-bar button {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+.radyo-pilipinas{
+    width: 100%;
+}
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.description {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.social-media a {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.social-media a.facebook {
+    background-color: #3b5998;
+}
+
+.social-media a.twitter {
+    background-color: #1da1f2;
+}
+
+.social-media a.youtube {
+    background-color: #ff0000;
+}
+.recent-posts {
+    margin-top: 50px;
+    margin-bottom: 15px;
+    gap: 20px;
+}
+
+.recent-posts a {
+    text-decoration: none;
+    color: black;
+}
+
+.recent-posts .post {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+    max-width: 100%;
+}
+
+.recent-posts .post img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.recent-posts .post-info {
+    flex: 1; 
+}
+
+.recent-posts .post-info p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.read-more {
+    font-size: 0.8rem;
+    color: #777;
+}
+
+.burger,.dropdown{
+    display:none;
+}
+
+/*PHONE SIZE */
+@media (max-width: 768px) {
+    .header-container{
+        height: 100px;
+        justify-content: space-between;
+
+    }
+    .header-img
+    {
+        padding: 0;
+        margin: 0;
+    }
+
+    .header-img img{
+        width: 100px;
+        margin-left: 20px;
+    }
+    
+    .main-navbar{
+        display: none;
+    }
+
+    .article-container{
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        flex-direction: column;
+        width:100%;
+        padding:0;
+        height: 500px;
+    }
+
+    .category{
+        margin-top: 50px;
+        font-size: 16px;
+    }
+
+    .headline{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .social-buttons{
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .image-container {
+        position: relative;
+        background-color: white;
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin: 0;
+    }
+
+    .image-container img {
+        margin: 40px 20px;
+    }
+
+    .right-container{
+        width: 100%;
+        padding-top: 20px;
+        margin-left:0;
+    }
+
+    .sub-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .radyo-pilipinas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        height: 100%;
+    }
+
+
+    .main-container{
+        width: 100%;
+    }
+
+    .dropdown {
+        position: absolute;
+        width:100%;
+        background-color: white;
+        z-index: 999;
+        display: none; 
+        overflow-y: auto;
+        text-align: center;
+
+    }
+
+    
+    .pop-up-menu {
+        display: flex;
+        flex-direction: column;
+        gap:15px;
+    }
+
+    .pop-up-menu div a {
+        font-size: 14px;
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+        width: 45%;
+        padding: 10px;
+    }
+
+    .pop-up-menu div a:hover {
+        color:white;
+        background-color: black;
+        width: 100%;
+    }
+    .burger-navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .burger{
+        margin-top: 30px;
+        margin-right: 40px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+}
+
+/*TABLET SIZE */
+
+@media only screen and (min-width: 769px) and (max-width: 1224px) and (orientation: portrait) {
+
+    .header-container{
+        height: 100px;
+        justify-content: space-between;
+    }
+
+    .burger{
+        margin-top: 30px;
+        margin-right: 40px;
+        display: block;
+
+    }
+
+    .header-img
+    {
+        padding: 0;
+        margin: 0;
+    }
+
+    .header-img img{
+        width: 100px;
+        margin-left: 20px;
+    }
+    
+    .main-navbar{
+        display: none;
+    }
+
+
+    .article-container{
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        flex-direction: column;
+        width:100%;
+        padding:0;
+        height: 550px;
+    }
+
+    .category{
+        margin-top: 50px;
+        font-size: 26px;
+    }
+
+    .headline{
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .social-buttons{
+        display: flex;
+        flex-wrap: wrap; 
+        gap: 10px; 
+        justify-content: center;
+    }
+
+    .image-container {
+        position: relative;
+        background-color: white;
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin: 0;
+    }
+
+    .image-container img {
+        margin: 50px 50px;
+    }
+
+    .sub-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .right-container{
+        width: 100%;
+        padding-top: 20px;
+        margin-left:0;
+    }
+
+    .radyo-pilipinas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+    .main-container{
+        width: 100%;
+    }
+
+    .dropdown {
+        position: absolute;
+        width:100%;
+        background-color: white;
+        z-index: 999;
+        display: none; 
+        padding:20px;
+        overflow-y: auto;
+        text-align: center;
+
+    }
+
+    .pop-up-menu {
+        display: flex;
+        flex-direction: column;
+        gap:15px;
+    }
+
+    .pop-up-menu div a {
+        font-size: 14px;
+        color: #333;
+        text-decoration: none;
+        font-weight: bold;
+        width: 45%;
+        padding: 10px;
+    }
+
+    .pop-up-menu div a:hover {
+        color:white;
+        background-color: black;
+        width: 100%;
+    }
+    .burger-navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    
+}
